@@ -137,7 +137,7 @@ This is an example of how to list things you need to use the software and how to
 * First of all, we need to gather all `functional requirements` of the Kanban Board. kanban boards can be broken down into five components: `Visual signals`, `columns`, `work-in-progress` limits, a `commitment point`, and a `delivery point`.
 
 <div align="center">
-<img src="images/Elements_of_a_kanban_board.png" alt="Kanban Board">
+<img src="images/Elements_of_a_kanban_board.png" alt="Kanban Board" width="500" height="398">
 </div> 
 
 <details>
