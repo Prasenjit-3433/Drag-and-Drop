@@ -136,10 +136,6 @@ This is an example of how to list things you need to use the software and how to
 
 * First of all, we need to gather all `functional requirements` of the Kanban Board. kanban boards can be broken down into five components: `Visual signals`, `columns`, `work-in-progress` limits, a `commitment point`, and a `delivery point`.
 
-<div align="center">
-<img src="images/Elements_of_a_kanban_board.png" alt="Kanban Board" width="500" height="398">
-</div> 
-
 <details>
   <summary>More About Each Component</summary>
   <ol>
@@ -147,7 +143,7 @@ This is an example of how to list things you need to use the software and how to
       <p>Visual Signals — One of the first things you’ll notice about a kanban board are the visual cards (stickies, tickets, or otherwise). Kanban teams write all of their projects and work items onto cards, usually one per card. For agile teams, each card could encapsulate one user story. Once on the board, these visual signals help teammates and stakeholders quickly understand what the team is working on.</p>
     </li>
     <li>
-      <p>Columns — Another hallmark of the kanban board are the columns. Each column represents a specific activity that together compose a “workflow”. Cards flow through the workflow until completion. Workflows can be as simple as “To Do,” “In Progress,” “Complete,” or much more complex.</p>
+      <p>Columns — Another hallmark of the kanban board are the columns. Each column represents a specific activity that together compose a “workflow”. Cards flow through the workflow until completion. Workflows can be as simple as “Backlog,” “In Progress,” “Complete,” or "On Hold".</p>
     </li>
     <li>
       <p>Work In Progress (WIP) Limits — WIP limits are the maximum number of cards that can be in one column at any given time. A column with a WIP limit of three cannot have more than three cards in it. When the column is “maxed-out” the team needs to swarm on those cards and move them forward before new cards can move into that stage of the workflow. These WIP limits are critical for exposing bottlenecks in the workflow and maximizing flow. WIP limits give you an early warning sign that you committed to too much work.</p>
@@ -160,6 +156,13 @@ This is an example of how to list things you need to use the software and how to
     </li>
   </ol>
 </details>
+
+
+<div align="center">
+<img src="images/Elements_of_a_kanban_board.png" alt="Kanban Board" width="500" height="398">
+</div> 
+
+
 
 * Then break the whole board into small `Ui Components` & start building indivisual components.
 <details>
