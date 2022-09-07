@@ -137,7 +137,7 @@ This is an example of how to list things you need to use the software and how to
 * First of all, we need to gather all `functional requirements` of the Kanban Board. kanban boards can be broken down into five components: `Visual signals`, `columns`, `work-in-progress` limits, a `commitment point`, and a `delivery point`.
 
 <div align="center">
-<img src="images/Elements_of_a_kanban_board.png" alt="Game-logo">
+<img src="images/Elements_of_a_kanban_board.png" alt="Kanban Board" width="400" height="278">
 </div> 
 
 <details>
@@ -186,7 +186,7 @@ This is an example of how to list things you need to use the software and how to
         <li>For user's selection, when user click on an icon, it's color turns into black & updates the "name-of-the-choice" portion from "choice" (by-default) to the selected one.</li>
         <li>For computer's choice, generate a number between 0 & 1 and divided whole (0, 1) interval into 5 parts - each of width 0.2. According as where does the generated number lie, we assign one from 'rock', 'paper', 'scissors', 'lizard', 'spock' respectively.</li>
         <li>Once computer chooses it's move, the respected icon's color on the game board turns into black & updates the "name-of-the-choice" portion from "choice" (by-default) to the selected one.</li>
-        <li><img src="images/image2.png" alt="Choice-Data-Structure" align="center"></li>
+        <li><img src="images/image2.png" alt="Kanban Columns" align="center" width="400" height="278"></li>
       </ul>
     </details>
     </li>
