@@ -183,12 +183,12 @@ This is an example of how to list things you need to use the software and how to
   </li>
   <li>
     <details>
-      <summary>Player's Move Icon</summary>
+      <summary>Connection between DOM & localStorage</summary>
       <ul>
-        <li>For user's selection, when user click on an icon, it's color turns into black & updates the "name-of-the-choice" portion from "choice" (by-default) to the selected one.</li>
-        <li>For computer's choice, generate a number between 0 & 1 and divided whole (0, 1) interval into 5 parts - each of width 0.2. According as where does the generated number lie, we assign one from 'rock', 'paper', 'scissors', 'lizard', 'spock' respectively.</li>
-        <li>Once computer chooses it's move, the respected icon's color on the game board turns into black & updates the "name-of-the-choice" portion from "choice" (by-default) to the selected one.</li>
-        
+        <li>First of all, we set 4 global arrays that'll hold all the contents for each 4 columns.</li>
+        <li>On load of the page, it'll try to fetch data from localStorage if there's any and populate them into those arrays accordingly. Otherwise set some default contents for those 4 arrays.</li>
+        <li>There's another global var to keep track if there's any changes made on those global 4 arrays.</li>
+        <li>Then a function to update DOM. It'll create element for each item in those 4 arrays and insert them into their proper columns accordingly.</li>
       </ul>
     </details>
     </li>
