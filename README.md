@@ -134,34 +134,45 @@ This is an example of how to list things you need to use the software and how to
 <!-- USAGE EXAMPLES -->
 ## 🏗️ Implementation
 
-* First of all, we need to gather all `functional requirements` of the game like:
-*  <details>
-    <summary>Functional Requirements:</summary>
-    <ol>
-      <li>Two players play the game by each picking a symbol randomly: the selected symbols determine who the winner is.</li>
-      <li>
-        <p>The allowed moves are Paper, Rock, Scissors, Lizard, Spock and they interact as follows:        
-           “Scissors cuts paper, paper covers rock, rock crushes lizard, lizard poisons Spock, Spock smashes scissors, scissors decapitates lizard, lizard eats paper, paper disproves Spock, Spock vaporizes rock, rock crushes scissors.”</p>
-      </li>
-      <li>If both players pick the same symbol, your application will not select a winner and declare the game a tie</li>
-    </ol>
-  </details>
+* First of all, we need to gather all `functional requirements` of the Kanban Board. kanban boards can be broken down into five components: `Visual signals`, `columns`, `work-in-progress` limits, a `commitment point`, and a `delivery point`.
+
 <div align="center">
-<img src="images/game-cycle.jpg" alt="Game-logo">
+<img src="images/Elements_of_a_kanban_board.png" alt="Game-logo">
 </div> 
 
-* Then break the whole game into small `Ui Components` & start building indivisual components.
+<details>
+  <summary>More About Each Component</summary>
+  <ol>
+    <li>
+      <p>Visual Signals — One of the first things you’ll notice about a kanban board are the visual cards (stickies, tickets, or otherwise). Kanban teams write all of their projects and work items onto cards, usually one per card. For agile teams, each card could encapsulate one user story. Once on the board, these visual signals help teammates and stakeholders quickly understand what the team is working on.</p>
+    </li>
+    <li>
+      <p>Columns — Another hallmark of the kanban board are the columns. Each column represents a specific activity that together compose a “workflow”. Cards flow through the workflow until completion. Workflows can be as simple as “To Do,” “In Progress,” “Complete,” or much more complex.</p>
+    </li>
+    <li>
+      <p>Work In Progress (WIP) Limits — WIP limits are the maximum number of cards that can be in one column at any given time. A column with a WIP limit of three cannot have more than three cards in it. When the column is “maxed-out” the team needs to swarm on those cards and move them forward before new cards can move into that stage of the workflow. These WIP limits are critical for exposing bottlenecks in the workflow and maximizing flow. WIP limits give you an early warning sign that you committed to too much work.</p>
+    </li>
+    <li>
+      <p>Commitment point — Kanban teams often have a backlog for their board. This is where customers and teammates put ideas for projects that the team can pick up when they are ready. The commitment point is the moment when an idea is picked up by the team and work starts on the projec</p>
+    </li>
+    <li>
+      <p>Delivery point — The delivery point is the end of a kanban team’s workflow. For most teams, the delivery point is when the product or service is in the hands of the customer. The team’s goal is to take cards from the commitment point to the delivery point as fast as possible. The elapsed time between the two is the called Lead Time. Kanban teams are continuously improving to decrease their lead time as much as possible.</p>
+    </li>
+  </ol>
+</details>
+
+* Then break the whole board into small `Ui Components` & start building indivisual components.
 <details>
 <summary>Ui Components:</summary>
 <ol>
 <li>
     <details>
-      <summary>Game Board</summary>
+      <summary>Columns, Custom Scrollbar</summary>
       <ul>
-        <li>The whole game'll be inside of a Game-Board which receives certain width on different viewports.</li>
-        <li>There'll be two players: User & Computer.</li>
-        <li>The icons are outsourced from FontAwesome's regular icon collection & Each icon represents a player's move </li>
-        <li>The player container divided into two sections - one for User & one for computer.</li>
+        <li>an unordered list is going to hold these 4 columns & each column is going to contain another unordered list which'll hold all the task items.</li>
+        <li>In each column, there'll be a header at top that indicates the type of the column, followed by task items and then at last, two buttons - add-item, save-item and a textbar which'll be hidden by default.</li>
+        <li>Each task item can have a maximum height of 52% of viewport height, so that user can always sees the bottom of the column. </li>
+        <li>If a column contains any task item with very long text, then in that case, a custom-designed scollbar will appear at side to scroll through the task items and at same item user can see whole column.</li>
         <li>Each section'll contain "player-name" followed by "score" and then "name-of-the-choice" the player selects. </li>
         <li>Next, all the "move-icons" sits in line.</li>
       </ul>
@@ -175,8 +186,7 @@ This is an example of how to list things you need to use the software and how to
         <li>For user's selection, when user click on an icon, it's color turns into black & updates the "name-of-the-choice" portion from "choice" (by-default) to the selected one.</li>
         <li>For computer's choice, generate a number between 0 & 1 and divided whole (0, 1) interval into 5 parts - each of width 0.2. According as where does the generated number lie, we assign one from 'rock', 'paper', 'scissors', 'lizard', 'spock' respectively.</li>
         <li>Once computer chooses it's move, the respected icon's color on the game board turns into black & updates the "name-of-the-choice" portion from "choice" (by-default) to the selected one.</li>
-        <li>Before allowing user to click again, the game board automatically reset previous choices of both player and computer.</li>
-        <li>Here "Switch Statement" is used to implement such feature in both cases.</li>
+        <li><img src="images/image2.png" alt="Choice-Data-Structure" align="center"></li>
       </ul>
     </details>
     </li>
@@ -256,9 +266,9 @@ Project Link: [https://github.com/Prasenjit-3433/Spock-Rock-Game](https://github
 <!-- ACKNOWLEDGMENTS -->
 ## ✌️ Acknowledgments
 
-* [Fontawesome](https://fontawesome.com/)
-* [Confett.js](https://www.cssscript.com/confetti-falling-animation/)
-* [Heropatterns - SVG Background](https://heropatterns.com/)
+* ![CSS-Tricks: Custom Scrollbar](https://css-tricks.com/the-current-state-of-styling-scrollbars-in-css/)
+* 
+* 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
