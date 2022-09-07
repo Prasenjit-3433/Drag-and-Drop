@@ -137,7 +137,7 @@ This is an example of how to list things you need to use the software and how to
 * First of all, we need to gather all `functional requirements` of the Kanban Board. kanban boards can be broken down into five components: `Visual signals`, `columns`, `work-in-progress` limits, a `commitment point`, and a `delivery point`.
 
 <div align="center">
-<img src="images/Elements_of_a_kanban_board.png" alt="Kanban Board" width="450" height="320">
+<img src="images/Elements_of_a_kanban_board.png" alt="Kanban Board">
 </div> 
 
 <details>
@@ -173,7 +173,7 @@ This is an example of how to list things you need to use the software and how to
         <li>In each column, there'll be a header at top that indicates the type of the column, followed by task items and then at last, two buttons - add-item, save-item and a textbar which'll be hidden by default.</li>
         <li>Each task item can have a maximum height of 52% of viewport height, so that user can always sees the bottom of the column. </li>
         <li>If a column contains any task item with very long text, then in that case, a custom-designed scollbar will appear at side to scroll through the task items and at same item user can see whole column.</li>
-        <li><img src="images/image2.png" alt="Kanban Columns" align="center" width="450" height="300"></li>
+        <div align="center"><img src="images/image2.png" alt="Kanban Columns" align="center" width="450" height="300"></div>
       </ul>
     </details>
   </li>
@@ -185,7 +185,7 @@ This is an example of how to list things you need to use the software and how to
         <li>For user's selection, when user click on an icon, it's color turns into black & updates the "name-of-the-choice" portion from "choice" (by-default) to the selected one.</li>
         <li>For computer's choice, generate a number between 0 & 1 and divided whole (0, 1) interval into 5 parts - each of width 0.2. According as where does the generated number lie, we assign one from 'rock', 'paper', 'scissors', 'lizard', 'spock' respectively.</li>
         <li>Once computer chooses it's move, the respected icon's color on the game board turns into black & updates the "name-of-the-choice" portion from "choice" (by-default) to the selected one.</li>
-        <li><img src="images/image2.png" alt="Kanban Columns" align="center" width="400" height="278"></li>
+        
       </ul>
     </details>
     </li>
