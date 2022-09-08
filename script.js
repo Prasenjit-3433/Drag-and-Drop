@@ -43,7 +43,7 @@ function getSavedColumns() {
 function updateSavedColumns() {
   listArrays = [backlogListArray, progressListArray, completeListArray, onHoldListArray];
   const arrayNames = ['backlog', 'progress', 'complete', 'onHold'];
-  for (i=0; i < listArrays.length; i++) {
+  for (let i=0; i < listArrays.length; i++) {
     localStorage.setItem(`${arrayNames[i]}Items`, JSON.stringify(listArrays[i]));
   }
 }
@@ -91,15 +91,38 @@ function updateDOM() {
     createItemEl(onHoldList, 0, onHoldItem, index);
   });
   // Run getSavedColumns only once, Update Local Storage
+  updatedOnLoad = true;
+  updateSavedColumns();
+}
 
+// Allows arrays to reflect Drag and Drop items
+function rebuildArrays() {
+  // Reset arrays before adding data from DOM into them
+  backlogListArray = [];
+  progressListArray = [];
+  completeListArray = [];
+  onHoldListArray = [];
 
+  for (let i = 0; i < backlogList.children.length; i++) {
+    backlogListArray.push(backlogList.children[i].textContent);
+  }
+  for (let i = 0; i < progressList.children.length; i++) {
+    progressListArray.push(progressList.children[i].textContent);
+  }
+  for (let i = 0; i < completeList.children.length; i++) {
+    completeListArray.push(completeList.children[i].textContent);
+  }
+  for (let i = 0; i < onHoldList.children.length; i++) {
+    onHoldListArray.push(onHoldList.children[i].textContent);
+  }
+
+  updateDOM();
 }
 
 // When Item Starts Draging
 function drag(event) {
   draggedItem = event.target;
   parentColumn = draggedItem.parentElement.dataset.column;
-  console.log(draggedItem);
 }
 
 // Column Allows for Item to Drop
@@ -129,6 +152,9 @@ function drop(event) {
   // Add Item to Column
   const parent = listColumns[currentColumn];
   parent.appendChild(draggedItem);
+
+  // Update global arrays
+  rebuildArrays();
 }
 
 // On Load

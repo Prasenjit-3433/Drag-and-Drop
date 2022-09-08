@@ -198,14 +198,12 @@ This is an example of how to list things you need to use the software and how to
       <ul>
         <li>First of all: To make an element draggable, set the `draggable` attribute to true</li>
         <li>Then, specify what should happen when the element is dragged. The `ondragstart` attribute calls a function, drag(event), that specifies what data to be dragged. The element is saved into a global var to keep track which element is being dragged and making it global as we need it in drop function as well later on.</li>
-        <li><img src="images/choice-ds.png" alt="Choice-Data-Structure" align="center"></li>
         <li>The ondragover event specifies where the dragged data can be dropped. By default, data/elements cannot be dropped in other elements. To allow a drop, we must prevent the default handling of the element. This is done by calling the event.preventDefault() method for the ondragover event.</li>
         <li>Do the Drop - ondrop: When the dragged data is dropped, a drop event occurs. Call preventDefault() to prevent the browser default handling of the data (default is open as link on drop).</li>
         <li>Add these methods on the element by `ondragover`, `ondrop` attributes.</li>
         <li>It'll be nice to have some visual reference to show that the column is ready to accept the incoming item. So the parent column and drop-target column take the colour of their head as their content's background color.</li>
         <li>On the fire of `dragenter` event, the parent column and drop-target column changes color & update their content.</li>
-        <li></li>
-        <li></li>
+        <li>Finally, each time when an item moved to another column, all the global arrays that contains column data are rebuilt and updated localStrorage.</li>
       </ul>
     </details>
   </li>
