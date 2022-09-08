@@ -3,7 +3,7 @@ const saveItemBtns = document.querySelectorAll('.solid');
 const addItemContainers = document.querySelectorAll('.add-container');
 const addItems = document.querySelectorAll('.add-item');
 // Item Lists
-const itemLists = document.querySelectorAll('.drag-item-list');
+const listColumns = document.querySelectorAll('.drag-item-list');
 const backlogList = document.getElementById('backlog-list');
 const progressList = document.getElementById('progress-list');
 const completeList = document.getElementById('complete-list');
@@ -11,6 +11,7 @@ const onHoldList = document.getElementById('on-hold-list');
 
 // Items
 let updatedOnLoad = false;
+let currentColumn;
 
 // Initialize Arrays
 let backlogListArray = [];
@@ -20,7 +21,7 @@ let onHoldListArray = [];
 let listArrays = [];
 
 // Drag Functionality
-
+let draggedItem;
 
 // Get Arrays from localStorage if available, set default values if not
 function getSavedColumns() {
@@ -56,6 +57,8 @@ function createItemEl(columnEl, column, item, index) {
   const listEl = document.createElement('li');
   listEl.classList.add('drag-item');
   listEl.textContent = item;
+  listEl.draggable = true;
+  listEl.setAttribute('ondragstart', 'drag(event)');
   // Append 
   columnEl.appendChild(listEl);
 }
@@ -89,6 +92,35 @@ function updateDOM() {
   // Run getSavedColumns only once, Update Local Storage
 
 
+}
+
+// When Item Starts Draging
+function drag(event) {
+  draggedItem = event.target;
+  console.log(draggedItem);
+}
+
+// Column Allows for Item to Drop
+function allowDrop(event) {
+  event.preventDefault();
+}
+
+// When Item Enters Column Area
+function dragEnter(column) {
+  listColumns[column].classList.add('over');
+  currentColumn = column;
+}
+
+// Dropping Item in Column
+function drop(event) {
+  event.preventDefault();
+  // Remove Background Color/Padding
+  listColumns.forEach((column) => {
+    column.classList.remove('over');
+  });
+  // Add Item to Column
+  const parent = listColumns[currentColumn];
+  parent.appendChild(draggedItem);
 }
 
 // On Load
