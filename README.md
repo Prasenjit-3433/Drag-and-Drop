@@ -274,9 +274,9 @@ Project Link: [https://github.com/Prasenjit-3433/Spock-Rock-Game](https://github
 <!-- ACKNOWLEDGMENTS -->
 ## ✌️ Acknowledgments
 
+* ![w3schools - HTML Drag and Drop API](https://www.w3schools.com/html/html5_draganddrop.asp)
+* ![w3schools - HTML ondragenter Attribute](https://www.w3schools.com/tags/att_ondragenter.asp)
 * ![CSS-Tricks: Custom Scrollbar](https://css-tricks.com/the-current-state-of-styling-scrollbars-in-css/)
-* 
-* 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

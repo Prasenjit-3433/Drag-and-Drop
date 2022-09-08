@@ -109,9 +109,12 @@ function allowDrop(event) {
 
 // When Item Enters Column Area
 function dragEnter(column) {
+  // Each time remove Background Color/Padding from all columns before adding color
   listColumns.forEach((column) => {
     column.classList.remove('over');
   });
+
+  // Then add Background Color/Padding to Parent element, Current Element 
   listColumns[column].classList.add('over');
   listColumns[parentColumn].classList.add('over');
   currentColumn = column;
@@ -120,7 +123,7 @@ function dragEnter(column) {
 // Dropping Item in Column
 function drop(event) {
   event.preventDefault();
-  // Remove Background Color/Padding
+  // Remove Background Color/Padding from Parent element, Current Element 
   listColumns[currentColumn].classList.remove('over');
   listColumns[parentColumn].classList.remove('over');
   // Add Item to Column
