@@ -11,6 +11,7 @@ const onHoldList = document.getElementById('on-hold-list');
 
 // Items
 let updatedOnLoad = false;
+let parentColumn;
 let currentColumn;
 
 // Initialize Arrays
@@ -97,6 +98,7 @@ function updateDOM() {
 // When Item Starts Draging
 function drag(event) {
   draggedItem = event.target;
+  parentColumn = draggedItem.parentElement.dataset.column;
   console.log(draggedItem);
 }
 
@@ -107,7 +109,11 @@ function allowDrop(event) {
 
 // When Item Enters Column Area
 function dragEnter(column) {
+  listColumns.forEach((column) => {
+    column.classList.remove('over');
+  });
   listColumns[column].classList.add('over');
+  listColumns[parentColumn].classList.add('over');
   currentColumn = column;
 }
 
@@ -115,9 +121,8 @@ function dragEnter(column) {
 function drop(event) {
   event.preventDefault();
   // Remove Background Color/Padding
-  listColumns.forEach((column) => {
-    column.classList.remove('over');
-  });
+  listColumns[currentColumn].classList.remove('over');
+  listColumns[parentColumn].classList.remove('over');
   // Add Item to Column
   const parent = listColumns[currentColumn];
   parent.appendChild(draggedItem);
