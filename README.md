@@ -213,8 +213,8 @@ This is an example of how to list things you need to use the software and how to
     <ul>
         <li>On the click on `Add Item` button, an inputBox will appear and `add Item` button get vanished by `Save Item` button.</li>
         <li>Once an user entered his message and press `Save Item`, the message is pushed into localArrays, transferred into localStorage and DOM get updated!.</li>
-        <li></li>
-        <li></li>
+        <li>At the time of creating item in the column, we also added contentEditable = true. So that later on, when user click on an item, he is able to edit/delete it.</li>
+        <li>Now when an user click into an item, modified it and then leves the element, then `focusout` event fires. On the fire of this event, the item is checked for if it does has text or not. If not, then remove it from the corresponding localArray & update the DOM.</li>
         <li></li>
         <li></li>
         <li></li>
@@ -272,10 +272,11 @@ Project Link: [https://github.com/Prasenjit-3433/Spock-Rock-Game](https://github
 <!-- ACKNOWLEDGMENTS -->
 ## ✌️ Acknowledgments
 
+* [CSS-Tricks: Custom Scrollbar](https://css-tricks.com/the-current-state-of-styling-scrollbars-in-css/)
 * [w3schools - HTML Drag and Drop API](https://www.w3schools.com/html/html5_draganddrop.asp)
 * [w3schools - HTML ondragenter Attribute](https://www.w3schools.com/tags/att_ondragenter.asp)
-* [CSS-Tricks: Custom Scrollbar](https://css-tricks.com/the-current-state-of-styling-scrollbars-in-css/)
 * [MDN - Making content editable](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Editable_content)
+* [MDN - focusout event](https://developer.mozilla.org/en-US/docs/Web/API/Element/focusout_event)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
