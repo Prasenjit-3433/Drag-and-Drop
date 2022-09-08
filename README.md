@@ -209,16 +209,16 @@ This is an example of how to list things you need to use the software and how to
   </li>
   <li>
   <details>
-      <summary>Confetti falling animation over Win</summary>
+      <summary>Add, Update, Delete an Item</summary>
     <ul>
-        <li>Here we used confetti.js, a vanilla JS library for creating a configurable, high-performance confetti falling animation using HTML5 canvas and requestAnimFrame API.</li>
-        <li>The confetti.js is modified little bit to bring the code under anonymous function into global scope. So that these three functions: 'startConfetti', 'stopConfetti', 'removeConfetti' become globally available.</li>
-        <li>The good news is that modern browsers have started to support module functionality natively. This can only be a good thing — browsers can optimize loading of modules, making it more efficient than having to use a library and do all of that extra client-side processing and extra round trips.</li>
-        <li>In order to do that, firstly we have to export the above three specified functions & import them inside main script file. Then execute main script file as the top-level module: </li>
-        <li><img src="images/module-execution.png" alt="Module Execution" align="center"></li>
-        <li>But type="module" makes main script self-contained. That means the main script no longer shares in global scope with the elements in index.html</li>
-        <li>To make things globally available, pass it into Window object like this: </li>
-        <li><img src="images/global-object.png" alt="Global Scope" align="center"></li>
+        <li>On the click on `Add Item` button, an inputBox will appear and `add Item` button get vanished by `Save Item` button.</li>
+        <li>Once an user entered his message and press `Save Item`, the message is pushed into localArrays, transferred into localStorage and DOM get updated!.</li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
       </ul>
     </details>
   </li>
@@ -272,9 +272,11 @@ Project Link: [https://github.com/Prasenjit-3433/Spock-Rock-Game](https://github
 <!-- ACKNOWLEDGMENTS -->
 ## ✌️ Acknowledgments
 
-* ![w3schools - HTML Drag and Drop API](https://www.w3schools.com/html/html5_draganddrop.asp)
-* ![w3schools - HTML ondragenter Attribute](https://www.w3schools.com/tags/att_ondragenter.asp)
-* ![CSS-Tricks: Custom Scrollbar](https://css-tricks.com/the-current-state-of-styling-scrollbars-in-css/)
+* [w3schools - HTML Drag and Drop API](https://www.w3schools.com/html/html5_draganddrop.asp)
+* [w3schools - HTML ondragenter Attribute](https://www.w3schools.com/tags/att_ondragenter.asp)
+* [CSS-Tricks: Custom Scrollbar](https://css-tricks.com/the-current-state-of-styling-scrollbars-in-css/)
+* [MDN - Making content editable](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Editable_content)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
