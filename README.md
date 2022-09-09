@@ -37,7 +37,7 @@
 <h3 align="center">Kanban Board</h3>
 
   <p align="center">
-    A web-based, Kanban-style, list-making application feat. Drag and Drop API, localStorage 😎
+    A web-based, Kanban-style, project management tool feat. Drag and Drop API, localStorage 😎
     <br />
     <a href="https://github.com/Prasenjit-3433/Drag-and-Drop"><strong>Explore the docs »</strong></a>
     <br />
@@ -233,7 +233,7 @@ _For more information, visit necessary reference [Link](#%EF%B8%8F-references)_
 <!-- Features -->
 ## 💎 Features
 
-- [ ] **flexibility**: Digital Kanban boards allow teams that do not share a physical office space to use kanban boards remotely and asynchronously. The setup involves just a few clicks to create digital lists, which represent the stages of your kanban process, on a board view that your whole team can access and manage.
+- [ ] **Flexibility**: Digital Kanban boards allow teams that do not share a physical office space to use kanban boards remotely and asynchronously. The setup involves just a few clicks to create digital lists, which represent the stages of your kanban process, on a board view that your whole team can access and manage.
 - [ ] **Drag and Drop**: Once can move a task from one stage to another stage by just dragging and dropping the card.
 - [ ] **Local Storage**: The setup uses browser's Local Storage to store the digital for faster data fetching. Even if the browser or tab get closed, all the data remain safe!. So that on the next page load, the board gets back to its previous state.
 
