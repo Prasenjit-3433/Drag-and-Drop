@@ -11,8 +11,6 @@ const onHoldList = document.getElementById('on-hold-list');
 
 // Items
 let updatedOnLoad = false;
-let parentColumn;
-let currentColumn;
 
 // Initialize Arrays
 let backlogListArray = [];
@@ -23,6 +21,10 @@ let listArrays = [];
 
 // Drag Functionality
 let draggedItem;
+let dragging = false;
+let parentColumn;
+let currentColumn;
+
 
 // Get Arrays from localStorage if available, set default values if not
 function getSavedColumns() {
@@ -108,10 +110,14 @@ function updateDOM() {
 function updateItem(idOfItem, column) {
   const selectedArray = listArrays[column];
   const selectedColumnElement = listColumns[column].children;
-  if (!selectedColumnElement[idOfItem].textContent) {
-    delete selectedArray[idOfItem];
+  if (!dragging) {
+    if (!selectedColumnElement[idOfItem].textContent) {
+      delete selectedArray[idOfItem];
+    }else {
+      selectedArray[idOfItem] = selectedColumnElement[idOfItem].textContent;
+    }
+    updateDOM();
   }
-  updateDOM();
 }
 
 // Add to Column List, Reset Textbox
@@ -167,6 +173,7 @@ function rebuildArrays() {
 function drag(event) {
   draggedItem = event.target;
   parentColumn = draggedItem.parentElement.dataset.column;
+  dragging = true;
 }
 
 // Column Allows for Item to Drop
@@ -196,6 +203,8 @@ function drop(event) {
   // Add Item to Column
   const parent = listColumns[currentColumn];
   parent.appendChild(draggedItem);
+  // Dragging Complete
+  dragging = false;
 
   // Update global arrays
   rebuildArrays();
