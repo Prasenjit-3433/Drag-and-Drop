@@ -30,23 +30,23 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/Prasenjit-3433/Spock-Rock-Game">
-    <img src="images/rock-paper-scissors.png" alt="Logo" width="80" height="80">
+  <a href="https://github.com/Prasenjit-3433/Drag-and-Drop">
+    <img src="images/kanban.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">Spock Rock Game</h3>
+<h3 align="center">Kanban Board</h3>
 
   <p align="center">
-    A JavaScript based Spock Rock Game feat. Confetti.js, Modules
+    A web-based, Kanban-style, list-making application feat. Drag and Drop API, localStorage 😎
     <br />
-    <a href="https://github.com/Prasenjit-3433/Spock-Rock-Game"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/Prasenjit-3433/Drag-and-Drop"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://spockrockjsgame.netlify.app/">View Demo</a>
+    <a href="https://kanbanboardjs.netlify.app/">View Demo</a>
     ·
-    <a href="https://github.com/Prasenjit-3433/Spock-Rock-Game/issues">Report Bug</a>
+    <a href="https://github.com/Prasenjit-3433/Drag-and-Drop/issues">Report Bug</a>
     ·
-    <a href="https://github.com/Prasenjit-3433/Spock-Rock-Game/issues">Request Feature</a>
+    <a href="https://github.com/Prasenjit-3433/Drag-and-Drop/issues">Request Feature</a>
   </p>
 </div>
 
@@ -70,10 +70,11 @@
       </ul>
     </li>
     <li><a href="#implementation">Implementation</a></li>
+    <li><a href="#feature">Features</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#references">References</a></li>
   </ol>
 </details>
 
@@ -124,7 +125,7 @@ This is an example of how to list things you need to use the software and how to
 
 1. First of all install `Live Server` extension by `Ritwick Dey`.
 2. Once the extension was installed, then `right-click` on `index.html` and select `Open with Live Server`.
-3. It'll open a new tab in browser & start serving the game. Enjoy!.
+3. It'll open a new tab in browser & start serving the Kanban Board. Enjoy!.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -223,7 +224,20 @@ This is an example of how to list things you need to use the software and how to
 </ol>
 </details>
 
-_To see in action, please visit to the [Link](https://spockrockjsgame.netlify.app/)_
+_For more information, visit necessary reference [Link](#%EF%B8%8F-references)_
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+<!-- Features -->
+## 💎 Features
+
+- [ ] **flexibility**: Digital Kanban boards allow teams that do not share a physical office space to use kanban boards remotely and asynchronously. The setup involves just a few clicks to create digital lists, which represent the stages of your kanban process, on a board view that your whole team can access and manage.
+- [ ] **Drag and Drop**: Once can move a task from one stage to another stage by just dragging and dropping the card.
+- [ ] **Local Storage**: The setup uses browser's Local Storage to store the digital for faster data fetching. Even if the browser or tab get closed, all the data remain safe!. So that on the next page load, the board gets back to its previous state.
+
+See the [open issues](https://github.com/Prasenjit-3433/Drag-and-Drop/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -261,14 +275,14 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Prasenjit Sutradhar - [@twitter_handle](https://twitter.com/twitter_handle) - prasenjitsutradhar3433@gmail.com
 
-Project Link: [https://github.com/Prasenjit-3433/Spock-Rock-Game](https://github.com/Prasenjit-3433/Spock-Rock-Game)
+Project Link: [https://github.com/Prasenjit-3433/Drag-and-Drop](https://github.com/Prasenjit-3433/Drag-and-Drop)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
-<!-- ACKNOWLEDGMENTS -->
-## ✌️ Acknowledgments
+<!-- references -->
+## ✌️ References
 
 * [CSS-Tricks: Custom Scrollbar](https://css-tricks.com/the-current-state-of-styling-scrollbars-in-css/)
 * [w3schools - HTML Drag and Drop API](https://www.w3schools.com/html/html5_draganddrop.asp)
@@ -283,16 +297,16 @@ Project Link: [https://github.com/Prasenjit-3433/Spock-Rock-Game](https://github
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/Prasenjit-3433/Spock-Rock-Game.svg?style=for-the-badge
-[contributors-url]: https://github.com/Prasenjit-3433/Spock-Rock-Game/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/Prasenjit-3433/Spock-Rock-Game.svg?style=for-the-badge
-[forks-url]: https://github.com/Prasenjit-3433/Spock-Rock-Game/network/members
-[stars-shield]: https://img.shields.io/github/stars/Prasenjit-3433/Spock-Rock-Game.svg?style=for-the-badge
-[stars-url]: https://github.com/Prasenjit-3433/Spock-Rock-Game/stargazers
-[issues-shield]: https://img.shields.io/github/issues/Prasenjit-3433/Spock-Rock-Game.svg?style=for-the-badge
-[issues-url]: https://github.com/Prasenjit-3433/Spock-Rock-Game/issues
-[license-shield]: https://img.shields.io/github/license/Prasenjit-3433/Spock-Rock-Game.svg?style=for-the-badge
-[license-url]: https://github.com/Prasenjit-3433/Spock-Rock-Game/blob/main/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/Prasenjit-3433/Drag-and-Drop.svg?style=for-the-badge
+[contributors-url]: https://github.com/Prasenjit-3433/Drag-and-Drop/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/Prasenjit-3433/Drag-and-Drop.svg?style=for-the-badge
+[forks-url]: https://github.com/Prasenjit-3433/Drag-and-Drop/network/members
+[stars-shield]: https://img.shields.io/github/stars/Prasenjit-3433/Drag-and-Drop.svg?style=for-the-badge
+[stars-url]: https://github.com/Prasenjit-3433/Drag-and-Drop/stargazers
+[issues-shield]: https://img.shields.io/github/issues/Prasenjit-3433/Drag-and-Drop.svg?style=for-the-badge
+[issues-url]: https://github.com/Prasenjit-3433/Drag-and-Drop/issues
+[license-shield]: https://img.shields.io/github/license/Prasenjit-3433/Drag-and-Drop.svg?style=for-the-badge
+[license-url]: https://github.com/Prasenjit-3433/Drag-and-Drop/blob/main/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://in.linkedin.com/
 [product-screenshot]: images/screenshot.png
